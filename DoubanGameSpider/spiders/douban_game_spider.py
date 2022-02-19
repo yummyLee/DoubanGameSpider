@@ -11,7 +11,7 @@ class DoubanGameSpider(scrapy.Spider):
     def start_requests(self):
         url_pre = 'https://www.douban.com/j/ilmen/game/search?genres=&platforms=&q=&sort=rating&more='
         urls = []
-        for i in range(1, 2):
+        for i in range(1, 200):
             urls.append(url_pre + str(i))
 
         for url in urls:
